@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Setup Jacoco">
+    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Setup Dockerfile">
       <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/css/main.073c9b0a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/css/main.073c9b0a.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/787.cda612ba.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/787.cda612ba.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.61db2afc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.61db2afc.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.61db2afc.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +28,9 @@
         <option value="main" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -80,7 +64,12 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a",
+    "ts.external.directory.path": "/Users/kolja/Desktop/NFP/capstone-plantitup/frontend/node_modules/typescript/lib"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -124,6 +113,9 @@
       <option name="presentableId" value="Default" />
       <updated>1671180268570</updated>
       <workItem from="1671180269715" duration="2673000" />
+      <workItem from="1671206963167" duration="676000" />
+      <workItem from="1671207823203" duration="201000" />
+      <workItem from="1671208054718" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1671185484836</created>
@@ -160,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671190474424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setup Dockerfile">
+      <created>1671203193890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671203193890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +170,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Docker" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -184,6 +195,7 @@
     <MESSAGE value="Init Project" />
     <MESSAGE value="Setup Sonar" />
     <MESSAGE value="Setup Jacoco" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Jacoco" />
+    <MESSAGE value="Setup Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Dockerfile" />
   </component>
 </project>
