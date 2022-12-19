@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Setup Models and UserRepo">
+    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Setup Models and UserController">
+      <change afterPath="$PROJECT_DIR$/frontend/src/model/User.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/service/IdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/service/IdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +19,7 @@
         <option value="Enum" />
         <option value="Record" />
         <option value="Class" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -67,6 +66,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "/Users/kolja/Desktop/NFP/capstone-plantitup/frontend/node_modules/typescript/lib"
   }
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671439300808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setup Models and UserController">
+      <created>1671444530703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671444530703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +161,7 @@
     <MESSAGE value="Init Project" />
     <MESSAGE value="Setup Sonar" />
     <MESSAGE value="Setup Models and UserRepo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Models and UserRepo" />
+    <MESSAGE value="Setup Models and UserController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Models and UserController" />
   </component>
 </project>
