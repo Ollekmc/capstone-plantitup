@@ -7,6 +7,7 @@ export default  function useUsers() {
 
     useEffect(()=> {
         getUsers()
+        //eslint-disable-next-line
     },[])
 
     function getUsers(){
@@ -16,12 +17,13 @@ export default  function useUsers() {
             })
             .catch(console.error)
     }
-    function addUser(newUser: NewUser){
-        return axios.post("api/users", newUser)
-            .then(response => response.data)
-            .then(savedUser) => setUsers(prevState => [...prevState,savedUser]))
-            .catch(console.error)
 
+
+    function addUser(newUser: NewUser) {
+        return axios.post("/api/users", newUser)
+            .then(response => response.data)
+            .then((savedUser) => setUsers(prevState => [...prevState, savedUser]))
+            .catch(console.error)
     }
 
     function deleteUser(id: string){

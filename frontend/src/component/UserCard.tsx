@@ -1,4 +1,5 @@
 import {User} from "../model/User";
+import UserDetails from "./UserDetails";
 
 type UserCardProps = {
     user: User;
@@ -12,6 +13,7 @@ export default function UserCard(props: UserCardProps){
             <p>{props.user.name}</p>
             <p>{props.user.id}</p>
             <p>{props.user.email}</p>
+            <UserDetails/>
         </div>
     )
 
