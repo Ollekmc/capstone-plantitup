@@ -33,7 +33,6 @@ public class UserService {
         user.setId(idService.generateId());
         return userRepo.save(user);
     }
-
     public List<User> search(String s) {
         List<User> searchResults = new ArrayList<>();
         for (User user: list()){
