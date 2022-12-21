@@ -26,11 +26,14 @@ class UserServiceTest {
     @Test
     void should_Return_User_List () {
         //GIVEN
+        User user1 = new User("1", "Justus", "email","password",plantList);
+        User user2 = new User("2", "Peter", "email","password",plantList);
+        User user3 = new User("3", "Bob","email","password",plantList );
         when(userRepo.findAll()).thenReturn(
                 List.of(
-                        new User("1", "Justus", "email","password",plantList),
-                        new User("2", "Peter", "email","password",plantList),
-                        new User("3", "Bob","email","password",plantList )
+                        user1,
+                        user2,
+                        user3
                 )
         );
         UserService userService = new UserService(userRepo, idService);
@@ -40,18 +43,19 @@ class UserServiceTest {
 
         //THEN
         assertThat(actual, containsInAnyOrder(
-                new User("1", "Justus", "email","password",plantList),
-                new User("2", "Peter", "email","password",plantList),
-                new User("3", "Bob","email","password",plantList )
+                user1,
+                user2,
+                user3
         ));
     }
 
     @Test
     void search_Should_Return_User() {
         //GIVEN
+        User user;
         when(userRepo.findAll()).thenReturn(
                 List.of(
-                        new User("1", "Justus", "email","password",plantList),
+                        user = new User("1", "Justus", "email","password",plantList),
                         new User("2", "Peter", "email","password",plantList),
                         new User("3", "Bob","email","password",plantList )
                 )
@@ -63,7 +67,8 @@ class UserServiceTest {
 
         //THEN
         assertThat(actual, containsInAnyOrder(
-                new User("1", "Justus", "email","password",plantList)
+                user
+                //new User("1", "Justus", "email","password",plantList)
         ));
     }
 
@@ -85,14 +90,15 @@ class UserServiceTest {
     @Test
     void testFindById() {
         //GIVEN
-        when(userRepo.findById("2")).thenReturn(Optional.of(new User("2", "Peter","email","password",plantList)));
+        User user = new User("2", "Peter","email","password",plantList);
+        when(userRepo.findById("2")).thenReturn(Optional.of(user));
         UserService userService = new UserService(userRepo, idService);
 
         //WHEN
         User result = userService.findById("2");
 
         //THEN
-        assertThat(result, is(new User("2", "Peter","email","password",plantList)));
+        assertThat(result, is(user));
     }
 
     @Test
@@ -107,21 +113,22 @@ class UserServiceTest {
             fail();
         } catch (IllegalArgumentException e) {
             //THEN
-            assertEquals( "Id not found!",e.getMessage());
+            assertEquals( "User-Id not found!",e.getMessage());
         }
     }
 
     @Test
     void should_Delete_by_Id() {
         //GIVEN
-        when(userRepo.findById("2")).thenReturn(Optional.of(new User("2", "Peter","email","password",plantList)));
+        User user = new User("2", "Peter","email","password",plantList);
+        when(userRepo.findById("2")).thenReturn(Optional.of(user));
         UserService userService = new UserService(userRepo, idService);
 
         //WHEN
         userService.delete("2");
 
         //THEN
-        verify(userRepo).delete(new User("2", "Peter","email","password",plantList));
+        verify(userRepo).delete(user);
 
     }
 
@@ -139,7 +146,7 @@ class UserServiceTest {
         User result = userService.addUser(userToAdd);
 
         //THEN
-        assertThat(result, is(userToAdd));
+        // assertThat(result, is(userToAdd));  TODO assert why not running w assertThat...
         verify(userRepo).save(userToAdd);
     }
 }

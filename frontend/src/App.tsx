@@ -12,8 +12,11 @@ function App() {
             <Route path={"user"} element={<UserApp/>}/>
         </Routes>
       </BrowserRouter>
-        <h1>Häääää</h1>
+        <h1>SignUpMock</h1>
+        <h1>LoginMock</h1>
+        <h1>Manage your plants</h1>
         <UserApp/>
+        <h1>PlantAppMock</h1>
 
     </div>
   );

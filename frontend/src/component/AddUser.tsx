@@ -1,6 +1,5 @@
 import {NewUser} from "../model/User";
 import {ChangeEvent, useState} from "react";
-import {Plant} from "../model/Plant";
 
 type AddUserProps = {
     addUser: (newUser: NewUser) => Promise<any>;
@@ -37,7 +36,9 @@ export default function AddUser(props: AddUserProps){
             <input type={"text"} placeholder={"Name"} value={name} onChange={onNameChange}/>
             <input type={"text"} placeholder={"Email"} value={email} onChange={onEmailChange}/>
             <input type={"text"} placeholder={"Password"} value={password} onChange={onPasswordChange}/>
+            <br/>
             <button onClick={onSave}>Speichern</button>
+            <br/>
         </div>
     )
 }
