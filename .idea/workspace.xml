@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Setup Sonar">
+    <list default="true" id="b3afa7ed-de83-40bc-a096-a6caa1e79b40" name="Changes" comment="Add First Draft Of User Handling w/o Security">
+      <change afterPath="$PROJECT_DIR$/backend/src/test/java/de/capstone/backend/service/PlantSpeciesServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/model/Scale.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/model/Scale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/model/Species.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/capstone/backend/model/Species.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/de/capstone/backend/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/de/capstone/backend/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="TypeScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="TypeScript JSX File" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="e159f8552487e6625e71fa488b2604f15302ed8b" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +44,16 @@
       <list>
         <option value="main" />
       </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2IzN5XlgXRiWEZgzqSVdS2GmCIJ" />
@@ -37,22 +67,138 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "/Users/kolja/Desktop/NFP/capstone-plantitup/frontend/public",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a",
+    "ts.external.directory.path": "/Users/kolja/Desktop/NFP/capstone-plantitup/frontend/node_modules/typescript/lib"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.capstone.backend.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.de.capstone.backend.service in backend">
+    <configuration name="PlantSpeciesServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.capstone.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.capstone.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="de.capstone.backend.service.PlantSpeciesServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantSpeciesServiceTest.search_Should_Return_Species" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.capstone.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.capstone.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="de.capstone.backend.service.PlantSpeciesServiceTest" />
+      <option name="METHOD_NAME" value="search_Should_Return_Species" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantSpeciesServiceTest.should_Add_Species" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.capstone.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.capstone.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="de.capstone.backend.service.PlantSpeciesServiceTest" />
+      <option name="METHOD_NAME" value="should_Add_Species" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantSpeciesServiceTest.should_Delete_By_Id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.capstone.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.capstone.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="de.capstone.backend.service.PlantSpeciesServiceTest" />
+      <option name="METHOD_NAME" value="should_Delete_By_Id" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="de.capstone.backend.service in backend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.capstone.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.capstone.backend.service" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.capstone.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.de.capstone.backend.service in backend" />
+        <item itemvalue="JUnit.PlantSpeciesServiceTest" />
+        <item itemvalue="JUnit.PlantSpeciesServiceTest.should_Delete_By_Id" />
+        <item itemvalue="JUnit.PlantSpeciesServiceTest.search_Should_Return_Species" />
+        <item itemvalue="JUnit.PlantSpeciesServiceTest.should_Add_Species" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,6 +209,9 @@
       <option name="presentableId" value="Default" />
       <updated>1671180268570</updated>
       <workItem from="1671180269715" duration="2673000" />
+      <workItem from="1671532322361" duration="2105000" />
+      <workItem from="1671743742812" duration="693000" />
+      <workItem from="1672733561650" duration="6123000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1671185484836</created>
@@ -92,7 +241,70 @@
       <option name="project" value="LOCAL" />
       <updated>1671188414937</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Setup Models and UserRepo">
+      <created>1671439300808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671439300808</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Setup Models and UserController">
+      <created>1671444530703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671444530703</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Setup Models frontend">
+      <created>1671445985996</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671445985996</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add AddUser">
+      <created>1671448663958</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671448663958</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add UserCard first draft w/o functions">
+      <created>1671449718595</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671449718595</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add UserApp &amp; user hook">
+      <created>1671452624405</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671452624406</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add PlantService, Controller, Repo&#10;Fix UserServiceTest">
+      <created>1671624431391</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671624431391</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add PlantSpeciesService, Repo&#10;Fix UserService">
+      <created>1671625976786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671625976786</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add First Draft Of User Handling w/o Security">
+      <created>1671658101219</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671658101219</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +327,20 @@
     </ignored-roots>
     <MESSAGE value="Init Project" />
     <MESSAGE value="Setup Sonar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Sonar" />
+    <MESSAGE value="Setup Models and UserRepo" />
+    <MESSAGE value="Setup Models and UserController" />
+    <MESSAGE value="Setup Models frontend" />
+    <MESSAGE value="Add AddUser" />
+    <MESSAGE value="Add UserCard first draft w/o functions" />
+    <MESSAGE value="Add UserApp &amp; user hook" />
+    <MESSAGE value="Add PlantService, Controller, Repo&#10;Fix UserServiceTest" />
+    <MESSAGE value="Add PlantSpeciesService, Repo&#10;Fix UserService" />
+    <MESSAGE value="Add First Draft Of User Handling w/o Security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add First Draft Of User Handling w/o Security" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/capstone_plantitup$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1671560178917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.capstone.backend.service.*</FILTER>
+    </SUITE>
   </component>
 </project>
