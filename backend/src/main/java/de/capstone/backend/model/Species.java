@@ -6,6 +6,13 @@ public class Species {
     Scale waterDemand;
     Scale fertilizerDemand;
 
+    public Species(String id, String name, Scale waterDemand, Scale fertilizerDemand) {
+        this.id = id;
+        this.name = name;
+        this.waterDemand = waterDemand;
+        this.fertilizerDemand = fertilizerDemand;
+    }
+
     public String getId() {
         return id;
     }

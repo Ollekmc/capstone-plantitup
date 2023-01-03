@@ -88,7 +88,7 @@ class UserServiceTest {
     }
 
     @Test
-    void testFindById() {
+    void should_Return_User_By_Id() {
         //GIVEN
         User user = new User("2", "Peter","email","password",plantList);
         when(userRepo.findById("2")).thenReturn(Optional.of(user));

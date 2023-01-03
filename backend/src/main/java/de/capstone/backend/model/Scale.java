@@ -1,7 +1,8 @@
 package de.capstone.backend.model;
 
 public class Scale {
-    Scale(int scale)
+
+    public Scale(int scale)
     {
         if(scale>=10 || scale<0)
         {
